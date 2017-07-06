@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>One Quote a day</title>
+    <script>
+        var quote = [
+            "The best way to cheer yourself up is to try to cheer somebody else up. -Mark Twain",
+            "Be somebody who makes everybody feel like a somebody. - Kid President (Robby Novak)",
+            "Freedom is never given; it is won. - A. Phiilip Randolph",
+            "Everybody can be great. Because anybody can serve. - Martin Luther King, Jr.",
+            "Success is not just the crowning moment, the spiking of the ball in the end zone or the raising of the flag on the summit. It is the whole process of reaching for a goal and, sometimes, it begins with failure. - Erik Weihenmayer",
+            "Give your hands to serve and your hearts to love. -Mother Teresa",
+            "If you know a shut-in or ill person, CALL HIM OR HER, AND VISIT, for goodness' sake!! Without human contact, their spirits shrivel and they die, or wish they would. Please! Thanks, SO much :)",
+            "We always kept in our hearts the most noble, beautiful feeling that sets human beings apart: hope. - Manel Loureiro",
+            "A lesson for all of us is that for every loss, there is victory, for every sadness, there is joy, and when you think you’ve lost everything, there is hope. - Geraldine Solon",
+            "Never give up HOPE NEVER GIVE UP HOPE - DESIREE"
+        ];
+
+        // $(document).on('ready',function(){
+        //     document.getElementById('root').innerHTML(quote[Math.floor(Math.random(11))]);
+        // });
+        function show(){
+            document.getElementById('root').innerHTML = "&quot;" + (quote[Math.floor(Math.random() * (10 - 1)) + 1]) + "&nbsp;&quot;";
+        };
+    </script>
+    <style>
+    #root{
+        margin-top: 17%;
+        margin-left: 4%;
+        font-size: 30px;
+        word-spacing: 6px;
+        width: 80%;
+        padding-left: 7%;
+        text-align: justify;
+
+        
+    }
+    .quote{
+            padding-right: 15px;
+            padding-left: 0;
+            text-align: right;
+            border-right: 5px solid #eee;
+            border-left: 0;
+    }
+
+    body{
+        background: aquamarine;
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+<script>
+    show();
+</script>
+</html>
