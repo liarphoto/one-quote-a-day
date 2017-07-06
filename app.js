@@ -8,3 +8,5 @@ app.listen(3000,function(request, response){
 app.get('/',function(request, response){
     response.sendFile(__dirname+'/index.html');
 });
+
+module.exports = app;

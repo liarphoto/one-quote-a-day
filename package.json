@@ -10,7 +10,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "mocha"
+    "start": "node ./bin/www"
   },
   "keywords": [
     "node"
